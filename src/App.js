@@ -1,9 +1,13 @@
 import './App.css';
-import Header from './Header/Header';
+import Header from './Components/Header/Header';
+import Sidebar from './Components/Sidebar/Sidebar';
 
 function App() {
   return (
-    <Header></Header>
+    <div>
+      <Sidebar/>
+      <Header/>
+    </div>
   );
 }
 
