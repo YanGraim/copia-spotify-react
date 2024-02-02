@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Sidebar.css"
 import logo from "../../assets/icons/logo-spotify.png"
@@ -15,14 +16,14 @@ const Sidebar = () => {
                 </div>
                 <ul>
                     <li>
-                        <a href="#">
-                            <span><FontAwesomeIcon icon={faHome}/></span>
+                        <a href="">
+                            <span><FontAwesomeIcon className="fa fa-home" icon={faHome}/></span>
                             <span>Início</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <span><FontAwesomeIcon icon={faSearch}/></span>
+                            <span><FontAwesomeIcon className="fa fa-search" icon={faSearch}/></span>
                             <span>Buscar</span>
                         </a>
                     </li>
@@ -31,10 +32,10 @@ const Sidebar = () => {
             <div className="library">
                 <div className="library-content">
                     <button className="library-button">
-                        <span><FontAwesomeIcon icon={faBook}/></span>
+                        <span><FontAwesomeIcon className="fa fa-book" icon={faBook}/></span>
                         <span>Sua biblioteca</span>
                     </button>
-                    <span><FontAwesomeIcon icon={faPlus}/></span>
+                    <span><FontAwesomeIcon className="fa fa-plus" icon={faPlus}/></span>
                 </div>
                 <section className="section-playlist">
                     <div className="section-playlist-content">
